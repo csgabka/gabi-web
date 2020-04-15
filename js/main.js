@@ -1,4 +1,6 @@
 
+window.addEventListener('scroll', checkSlide);
+
 function pageScroll(value) {
 	document.getElementById(value).scrollIntoView({behavior: "smooth"});
 }
@@ -23,4 +25,3 @@ function checkSlide(e) {
 	});
 }
 
-window.addEventListener('scroll', checkSlide);
