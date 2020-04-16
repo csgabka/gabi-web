@@ -49,12 +49,9 @@ button {
 	background-color: #000000;
 }
 
-img {
-  max-width: 60%;
-  height: auto;
+.port-img {
+	width: 100%;
 }
-
-
 
 .port-img:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
@@ -82,9 +79,20 @@ h2, h4 {
 	text-align: center;
 }
 
+
+
 .slide-in {
 	opacity: 0;
 	transition: all 3s;
+	max-width: 60%;
+ 	height: auto;
+ 	padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 450px) {
+	.slide-in {
+		max-width: 100%;
+	}
 }
 
 .active {
@@ -100,12 +108,13 @@ h2, h4 {
 
 
 .card {
-	padding: 3%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	background-color: black;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	border: 2px solid #d39e00;
+	border: 1px grey solid;
 	
 
 }
