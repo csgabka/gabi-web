@@ -23,20 +23,20 @@ button {
     background-color: transparent;
 }
 
-.contact a, a {
+a {
 	padding: 2px;
 	background-color: grey;
 	text-decoration: none;
 	color: #000;
 	border-radius: 3px;
+	box-shadow: 1px 1px 1px 2px;
+	margin: 10px;
+	transition: 0.1s ease-in-out;
 }
 
-.contact a, a:hover {
+a:hover {
+	transform: scale(1.1);
 	text-decoration: none;
-	color: darkgrey;
-}
-
-.contact a, a:visited {
 	color: darkgrey;
 }
 
@@ -60,6 +60,7 @@ button {
 }
 
 main {
+
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
