@@ -23,6 +23,23 @@ button {
     background-color: transparent;
 }
 
+.contact a, a {
+	padding: 2px;
+	background-color: grey;
+	text-decoration: none;
+	color: #000;
+	border-radius: 3px;
+}
+
+.contact a, a:hover {
+	text-decoration: none;
+	color: darkgrey;
+}
+
+.contact a, a:visited {
+	color: darkgrey;
+}
+
 .hi {
 	font-size: 3em;
 }
@@ -42,23 +59,58 @@ button {
 	height: 100vh;
 }
 
-.img-container {
-	padding-bottom: 5%;
-	display: flex;
-	justify-content: flex-end;
-	background-color: #000000;
+main {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }
 
-.port-img {
+@media (max-width: 1100px) {
+	main {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 760px) {
+	main {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 500px) {
+	main {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.box {
+	background-color: #101010;
+	border-radius:2px;
+	box-shadow:  2px 1px 8px #888888;
+	width: auto;
+	padding: 5px;
+	margin: 5px;
+	align-items: center;
+}
+
+
+
+.box img{
 	width: 100%;
+	object-fit: cover;
+	height: 200px;
 }
 
-.port-img:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
+.box:hover {
+	cursor: pointer;
   animation: shake 0.5s;
-
-  /* When the animation is finished, start again */
   animation-iteration-count: infinite;
+}
+
+
+
+.info {
+	text-align: center;
+	text-transform: uppercase;
 }
 
 @keyframes shake {
@@ -75,6 +127,7 @@ button {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+
 h2, h4 {
 	text-align: center;
 }
@@ -87,6 +140,9 @@ h2, h4 {
 	max-width: 60%;
  	height: auto;
  	padding-bottom: 5%;
+ 	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
 }
 
 @media only screen and (max-width: 450px) {
@@ -105,20 +161,6 @@ h2, h4 {
 	padding-bottom: 5%;
 }
 
-
-
-.card {
-	padding-top: 3%;
-	padding-bottom: 3%;
-	background-color: black;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	border: 1px grey solid;
-	
-
-}
-
 .contact {
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -126,6 +168,4 @@ h2, h4 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
-
 }
