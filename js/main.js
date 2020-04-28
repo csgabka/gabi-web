@@ -29,6 +29,11 @@ const projectData = [
     image: './img/converter.jpg',
     text: "Arabic to Roman Numeral Converter",
     link: "https://csgabka.github.io/ArabicToRomanNumeralConverter/"
+  },
+    {
+    image: './img/blog.jpg',
+    text: "Javascript + Firebase BLOG",
+    link: "https://csgabka-1539976293487.firebaseapp.com/"
   }
 ];
 
